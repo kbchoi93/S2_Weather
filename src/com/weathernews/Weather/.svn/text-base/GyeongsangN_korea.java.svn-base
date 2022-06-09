@@ -1,0 +1,30 @@
+package com.weathernews.Weather;
+public class GyeongsangN_korea {
+    public final static CityListClass[] Gyeongsang_korea = new CityListClass[] {
+	new CityListClass("11H10703",	"경산",	"대한민국",	"Asia/Seoul"),
+	new CityListClass("11H10202",	"경주",	"대한민국",	"Asia/Seoul"),
+	new CityListClass("11H10604",	"고령",	"대한민국",	"Asia/Seoul"),
+	new CityListClass("11H10602",	"구미",	"대한민국",	"Asia/Seoul"),
+	new CityListClass("11H10603",	"군위",	"대한민국",	"Asia/Seoul"),
+	new CityListClass("11H10601",	"김천",	"대한민국",	"Asia/Seoul"),
+	new CityListClass("11H10701",	"대구",	"대한민국",	"Asia/Seoul"),
+	new CityListClass("11E00102",	"독도",	"대한민국",	"Asia/Seoul"),
+	new CityListClass("11H10301",	"문경",	"대한민국",	"Asia/Seoul"),
+	new CityListClass("11H10402",	"봉화",	"대한민국",	"Asia/Seoul"),
+	new CityListClass("11H10302",	"상주",	"대한민국",	"Asia/Seoul"),
+	new CityListClass("11H10605",	"성주",	"대한민국",	"Asia/Seoul"),
+	new CityListClass("11H10501",	"안동",	"대한민국",	"Asia/Seoul"),
+	new CityListClass("11H10102",	"영덕",	"대한민국",	"Asia/Seoul"),
+	new CityListClass("11H10403",	"영양",	"대한민국",	"Asia/Seoul"),
+	new CityListClass("11H10401",	"영주",	"대한민국",	"Asia/Seoul"),
+	new CityListClass("11H10702",	"영천",	"대한민국",	"Asia/Seoul"),
+	new CityListClass("11H10303",	"예천",	"대한민국",	"Asia/Seoul"),
+	new CityListClass("11E00101",	"울릉도",	"대한민국",	"Asia/Seoul"),
+	new CityListClass("11H10101",	"울진",	"대한민국",	"Asia/Seoul"),
+	new CityListClass("11H10502",	"의성",	"대한민국",	"Asia/Seoul"),
+	new CityListClass("11H10704",	"청도",	"대한민국",	"Asia/Seoul"),
+	new CityListClass("11H10503",	"청송",	"대한민국",	"Asia/Seoul"),
+	new CityListClass("11H10705",	"칠곡",	"대한민국",	"Asia/Seoul"),
+	new CityListClass("11H10201",	"포항",	"대한민국",	"Asia/Seoul"),
+    };
+}

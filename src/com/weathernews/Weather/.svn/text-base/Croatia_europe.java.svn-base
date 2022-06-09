@@ -1,0 +1,31 @@
+package com.weathernews.Weather;
+public class Croatia_europe {
+    public final static CityListClass[] Croatia_europe = new CityListClass[] {
+    	new CityListClass("GSPC",	"고스피치",	"크로아티아",	"Europe/Zagreb"),
+	new CityListClass("DUBR",	"두브로브니크",	"크로아티아",	"Europe/Zagreb"),
+	new CityListClass("RJK",	"리예카",	"크로아티아",	"Europe/Zagreb"),
+	new CityListClass("VRZDN",	"바라즈딘",	"크로아티아",	"Europe/Zagreb"),
+	new CityListClass("BJLVR",	"벨로브아",	"크로아티아",	"Europe/Zagreb"),
+	new CityListClass("GRCV",	"벨리카 고리차",	"크로아티아",	"Europe/Zagreb"),
+	new CityListClass("VKVR",	"부코바르",	"크로아티아",	"Europe/Zagreb"),
+	new CityListClass("VNKVC",	"빈코비치",	"크로아티아",	"Europe/Zagreb"),
+	new CityListClass("SENJ",	"센",	"크로아티아",	"Europe/Zagreb"),
+	new CityListClass("SPL",	"스플리트",	"크로아티아",	"Europe/Zagreb"),
+	new CityListClass("SLTNA",	"슬라티나",	"크로아티아",	"Europe/Zagreb"),
+	new CityListClass("SLVNS",	"슬라폰스키브로트",	"크로아티아",	"Europe/Zagreb"),
+	new CityListClass("VRVTC",	"비로비티차",	"크로아티아",	"Europe/Zagreb"),
+	new CityListClass("SBN",	"시베니크",	"크로아티아",	"Europe/Zagreb"),
+	new CityListClass("SISAK",	"시사크",	"크로아티아",	"Europe/Zagreb"),
+	new CityListClass("OSJK",	"오시예크",	"크로아티아",	"Europe/Zagreb"),
+	new CityListClass("SSVT",	"자그레브-외곽",	"크로아티아",	"Europe/Zagreb"),
+	new CityListClass("ZGRB",	"자그레브",	"크로아티아",	"Europe/Zagreb"),
+	new CityListClass("ZAD",	"자다르",	"크로아티아",	"Europe/Zagreb"),
+	new CityListClass("CKVC",	"차코베츠",	"크로아티아",	"Europe/Zagreb"),
+	new CityListClass("KRLVC",	"카를로바츠",	"크로아티아",	"Europe/Zagreb"),
+	new CityListClass("KPRVN",	"코프리브니카",	"크로아티아",	"Europe/Zagreb"),
+	new CityListClass("KTN1",	"쿠티나",	"크로아티아",	"Europe/Zagreb"),
+	new CityListClass("KRPN",	"크라피나",	"크로아티아",	"Europe/Zagreb"),
+	new CityListClass("PZG",	"포제가",	"크로아티아",	"Europe/Zagreb"),
+	new CityListClass("PUY",	"풀라",	"크로아티아",	"Europe/Zagreb"),
+    };
+}

@@ -1,0 +1,33 @@
+package com.weathernews.Weather;
+public class Venezuela_southamerica {
+    public final static CityListClass[] Venezuela_southamerica = new CityListClass[] {
+    	new CityListClass("GNR", "과나래", "베네수엘라", "America/Caracas"),
+    	new CityListClass("LGU", "라 구아이라", "베네수엘라", "America/Caracas"),
+    	new CityListClass("ASNCNL", "라 아순시온", "베네수엘라", "America/Caracas"),
+    	new CityListClass("TQS", "로스테크", "베네수엘라", "America/Caracas"),
+    	new CityListClass("MAR", "마라 카 이보", "베네수엘라", "America/Caracas"),
+    	new CityListClass("MRCY", "마라카이", "베네수엘라", "America/Caracas"),
+    	new CityListClass("MTRN", "마투린", "베네수엘라", "America/Caracas"),
+    	new CityListClass("MERD", "메리다", "베네수엘라", "America/Caracas"),
+    	new CityListClass("BAEV", "바르셀로나", "베네수엘라", "America/Caracas"),
+    	new CityListClass("BRQSM", "바르키시메토", "베네수엘라", "America/Caracas"),
+    	new CityListClass("BRNS1", "바리나스", "베네수엘라", "America/Caracas"),
+    	new CityListClass("VLNC", "발렌시아", "베네수엘라", "America/Caracas"),
+    	new CityListClass("CRLSS", "산 카를로스", "베네수엘라", "America/Caracas"),
+    	new CityListClass("CRSTB", "산 크리스토발", "베네수엘라", "America/Caracas"),
+    	new CityListClass("FLP", "산 펠리페", "베네수엘라", "America/Caracas"),
+    	new CityListClass("FRNNDA", "산페르난도데아푸레", "베네수엘라", "America/Caracas"),
+    	new CityListClass("MRRS", "산후안데로스모로스", "베네수엘라", "America/Caracas"),
+    	new CityListClass("GYN", "시우다드 가이아나", "베네수엘라", "America/Caracas"),
+    	new CityListClass("BLVR", "시우다드 볼리바르", "베네수엘라", "America/Caracas"),
+    	new CityListClass("BRNS", "알토바레나스", "베네수엘라", "America/Caracas"),
+    	new CityListClass("CRV", "카라카스", "베네수엘라", "America/Caracas"),
+    	new CityListClass("CORO", "코로", "베네수엘라", "America/Caracas"),
+    	new CityListClass("CUM", "쿠마나", "베네수엘라", "America/Caracas"),
+    	new CityListClass("TRMR", "투르메로", "베네수엘라", "America/Caracas"),
+    	new CityListClass("TCPT", "투쿠피타", "베네수엘라", "America/Caracas"),
+    	new CityListClass("TRJLL", "트루히요", "베네수엘라", "America/Caracas"),
+    	new CityListClass("PTR1", "페타레", "베네수엘라", "America/Caracas"),
+    	new CityListClass("AYCCH", "푸에르 아야쿠초", "베네수엘라", "America/Caracas"),
+    };
+}

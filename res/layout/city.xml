@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/citygroup"
+    >
+
+    <LinearLayout 
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/status_bar_header_background"
+    >
+    <com.weathernews.Weather.MyAutoCompleteTextView 
+        android:id="@+id/name_input" 
+        android:hint="도시명을 입력하십시오"
+        android:imeOptions="actionSearch"
+        android:layout_gravity="center_vertical"
+        android:completionThreshold="1"
+        android:dropDownHeight="wrap_content"
+        android:singleLine="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="6dp" android:layout_weight="1" android:layout_width="fill_parent" android:layout_height="52dp"/>
+        <!--  "@android:drawable/editbox_background"-->
+    <LinearLayout
+        android:id="@+id/search"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+    android:layout_width="wrap_content" android:layout_marginRight="6dp" android:layout_height="52dp">
+    <ImageButton
+        android:id="@+id/searchbtn"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:clickable="true"
+        android:background="@drawable/search_btn_selector"
+        android:src="@drawable/ic_btn_search"
+        android:layout_gravity="center_vertical|center_horizontal"
+        />
+    </LinearLayout>
+    </LinearLayout>
+    
+    <ListView
+        android:id="@+id/android:list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:drawSelectorOnTop="false"/>
+</LinearLayout>

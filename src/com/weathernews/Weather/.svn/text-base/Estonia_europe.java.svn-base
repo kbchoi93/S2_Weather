@@ -1,0 +1,30 @@
+package com.weathernews.Weather;
+public class Estonia_europe {
+    public final static CityListClass[] Estonia_europe = new CityListClass[] {
+	new CityListClass("NARVA",	"나르바",	"에스토니아",	"Europe/Tallinn"),
+	new CityListClass("NISSI",	"닛시",	"에스토니아",	"Europe/Tallinn"),
+	new CityListClass("RKVR",	"라크베레",	"에스토니아",	"Europe/Tallinn"),
+	new CityListClass("RAPLA",	"라프라",	"에스토니아",	"Europe/Tallinn"),
+	new CityListClass("MARDU",	"마르토",	"에스토니아",	"Europe/Tallinn"),
+	new CityListClass("MST1",	"무스트",	"에스토니아",	"Europe/Tallinn"),
+	new CityListClass("VALGA",	"발가",	"에스토니아",	"Europe/Tallinn"),
+	new CityListClass("VORU",	"보루",	"에스토니아",	"Europe/Tallinn"),
+	new CityListClass("VLJND",	"빌 랸디",	"에스토니아",	"Europe/Tallinn"),
+	new CityListClass("SAUE",	"사우에",	"에스토니아",	"Europe/Tallinn"),
+	new CityListClass("SINDI",	"신디",	"에스토니아",	"Europe/Tallinn"),
+	new CityListClass("SLLM",	"실라마에",	"에스토니아",	"Europe/Tallinn"),
+	new CityListClass("JGV",	"요게바",	"에스토니아",	"Europe/Tallinn"),
+	new CityListClass("JOHVI",	"요비",	"에스토니아",	"Europe/Tallinn"),
+	new CityListClass("KRDL",	"캐르들라",	"에스토니아",	"Europe/Tallinn"),
+	new CityListClass("KHTL",	"코흐틀라-예르베",	"에스토니아",	"Europe/Tallinn"),
+	new CityListClass("KRSSR",	"쿠레사레",	"에스토니아",	"Europe/Tallinn"),
+	new CityListClass("TARTU",	"타르투",	"에스토니아",	"Europe/Tallinn"),
+	new CityListClass("TAPA",	"타파",	"에스토니아",	"Europe/Tallinn"),
+	new CityListClass("TLL",	"탈린",	"에스토니아",	"Europe/Tallinn"),
+	new CityListClass("TMSL",	"탐살루",	"에스토니아",	"Europe/Tallinn"),
+	new CityListClass("PAIDE",	"파이드",	"에스토니아",	"Europe/Tallinn"),
+	new CityListClass("PARNU",	"페르누",	"에스토니아",	"Europe/Tallinn"),
+	new CityListClass("POLVA",	"폴바마콘드",	"에스토니아",	"Europe/Tallinn"),
+	new CityListClass("HPSL1",	"합살루",	"에스토니아",	"Europe/Tallinn"),
+    };
+}

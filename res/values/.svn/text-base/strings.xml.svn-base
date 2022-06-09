@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="weather_base_url">http://soratomo.wni.co.kr/android/</string>
+    <string name="livecamroot">http://soratomo.wni.co.kr/android/livecam/</string>
+    <string name="livecamdataroot">http://soratomo.wni.co.kr/android/livecam/</string>
+    <string name="viewlivecam_loading_text">로딩중...</string>
+    <string name="radar_url">http://weathernews.co.kr/radar/xml/KRW.xml</string>
+    <string name="sattle_url">http://weathernews.jp/satellite/xml/thumbnail.xml</string>
+    <string name="vercheck">http://soratomo.wni.co.kr/android/checkVersion.cgi</string>
+    <string name="livecam">http://soratomo.wni.co.kr/android/livecam/krlist.xml</string>
+    <string name="livecamalive">http://soratomo.wni.co.kr/android/checkLiveCam.cgi</string>
+</resources>

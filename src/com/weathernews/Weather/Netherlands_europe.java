@@ -1,0 +1,30 @@
+package com.weathernews.Weather;
+public class Netherlands_europe {
+    public final static CityListClass[] Netherlands_europe = new CityListClass[] {
+    	new CityListClass("NJMGN", "네이메헨", "네덜란드", "Europe/Amsterdam"),
+    	new CityListClass("DEH", "덴헬데르", "네덜란드", "Europe/Amsterdam"),
+    	new CityListClass("LWRDN", "레이와르던", "네덜란드", "Europe/Amsterdam"),
+    	new CityListClass("LLYST", "렐리스테이드", "네덜란드", "Europe/Amsterdam"),
+    	new CityListClass("ROT", "로테르담", "네덜란드", "Europe/Amsterdam"),
+    	new CityListClass("MSTRCH", "마스트리흐트", "네덜란드", "Europe/Amsterdam"),
+    	new CityListClass("MDDLB", "미델뷔르흐", "네덜란드", "Europe/Amsterdam"),
+    	new CityListClass("VENLO", "벤로", "네덜란드", "Europe/Amsterdam"),
+    	new CityListClass("BREDA", "브레다", "네덜란드", "Europe/Amsterdam"),
+    	new CityListClass("ARNHM", "아른험", "네덜란드", "Europe/Amsterdam"),
+    	new CityListClass("ASSEN", "아센", "네덜란드", "Europe/Amsterdam"),
+    	new CityListClass("APLDR", "아펠도른", "네덜란드", "Europe/Amsterdam"),
+    	new CityListClass("ALKMR", "알크마르", "네덜란드", "Europe/Amsterdam"),
+    	new CityListClass("AMS", "암스테르담", "네덜란드", "Europe/Amsterdam"),
+    	new CityListClass("ENDHV", "에인트호번", "네덜란드", "Europe/Amsterdam"),
+    	new CityListClass("ENSCH", "엔스헤데", "네덜란드", "Europe/Amsterdam"),
+    	new CityListClass("EMD", "엠멘", "네덜란드", "Europe/Amsterdam"),
+    	new CityListClass("UTRCH", "위트레흐트", "네덜란드", "Europe/Amsterdam"),
+    	new CityListClass("ZWOLL", "츄올레", "네덜란드", "Europe/Amsterdam"),
+    	new CityListClass("TER", "테르뇌젠", "네덜란드", "Europe/Amsterdam"),
+    	new CityListClass("HRLM", "하를럼", "네덜란드", "Europe/Amsterdam"),
+    	new CityListClass("HRNVN", "헤렌벤", "네덜란드", "Europe/Amsterdam"),
+    	new CityListClass("HRTGN", "헤르토겐보쉬", "네덜란드", "Europe/Amsterdam"),
+    	new CityListClass("HAGUE", "헤이그", "네덜란드", "Europe/Amsterdam"),
+    	new CityListClass("GRNNG", "흐로닝언주", "네덜란드", "Europe/Amsterdam"),
+    };
+}

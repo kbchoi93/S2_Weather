@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_top_root" android:orientation="vertical"
+    android:layout_width="455px" android:layout_height="108px"
+    >
+    <TextView  
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="이용안내"
+        android:textSize="40px"
+        android:textColor="#ffffff"
+        android:gravity="center_vertical"
+        android:padding="10px"
+        />
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:background="@drawable/divider_horizontal_dark"
+        />
+</LinearLayout>
+

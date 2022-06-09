@@ -1,0 +1,32 @@
+package com.weathernews.Weather;
+public class Gyeonggi_korea {
+    public final static CityListClass[] Gyeonggi_korea = new CityListClass[] {
+	new CityListClass("11B20404",	"가평",	"대한민국",	"Asia/Seoul"),
+	new CityListClass("11B20101",	"강화",	"대한민국",	"Asia/Seoul"),
+	new CityListClass("11B20302",	"고양",	"대한민국",	"Asia/Seoul"),
+	new CityListClass("11B20702",	"광주(경기)",	"대한민국",	"Asia/Seoul"),
+	new CityListClass("11B20501",	"구리",	"대한민국",	"Asia/Seoul"),
+	new CityListClass("11B20102",	"김포",	"대한민국",	"Asia/Seoul"),
+	new CityListClass("11B20502",	"남양주",	"대한민국",	"Asia/Seoul"),
+	new CityListClass("11B20401",	"동두천",	"대한민국",	"Asia/Seoul"),
+	new CityListClass("11B20305",	"문산",	"대한민국",	"Asia/Seoul"),
+	new CityListClass("11A00101",	"백령도",	"대한민국",	"Asia/Seoul"),
+	new CityListClass("11B20204",	"부천",	"대한민국",	"Asia/Seoul"),
+	new CityListClass("11B20605",	"성남",	"대한민국",	"Asia/Seoul"),
+	new CityListClass("11B20601",	"수원",	"대한민국",	"Asia/Seoul"),
+	new CityListClass("11B20202",	"시흥",	"대한민국",	"Asia/Seoul"),
+	new CityListClass("11B20203",	"안산",	"대한민국",	"Asia/Seoul"),
+	new CityListClass("11B20602",	"안양",	"대한민국",	"Asia/Seoul"),
+	new CityListClass("11B20304",	"양주",	"대한민국",	"Asia/Seoul"),
+	new CityListClass("11B20503",	"양평",	"대한민국",	"Asia/Seoul"),
+	new CityListClass("11B20402",	"연천",	"대한민국",	"Asia/Seoul"),
+	new CityListClass("11B20603",	"오산",	"대한민국",	"Asia/Seoul"),
+	new CityListClass("11B20301",	"의정부",	"대한민국",	"Asia/Seoul"),
+	new CityListClass("11B20701",	"이천",	"대한민국",	"Asia/Seoul"),
+	new CityListClass("11B20201",	"인천",	"대한민국",	"Asia/Seoul"),
+	new CityListClass("11B20303",	"파주",	"대한민국",	"Asia/Seoul"),
+	new CityListClass("11B20606",	"평택",	"대한민국",	"Asia/Seoul"),
+	new CityListClass("11B20403",	"포천",	"대한민국",	"Asia/Seoul"),
+	new CityListClass("11B20604",	"화성",	"대한민국",	"Asia/Seoul"),
+    };
+}

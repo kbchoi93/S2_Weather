@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/showtoday_root" android:orientation="vertical"
+    android:layout_width="450dp" android:layout_height="480dp"
+    android:padding="5dp"
+    >
+    <TextView  
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="18dp"
+        android:text="날씨 정보 업데이트에 실패하였습니다. 다시 시도해 주십시오."
+        android:textColor="#ffffff"
+        />
+</LinearLayout>

@@ -1,0 +1,55 @@
+10
+
+dir
+1459
+svn+ssh://kbchoi@inetdev/export/MOBILE/android/Weather/res
+svn+ssh://kbchoi@inetdev/export/MOBILE
+
+
+
+2010-12-21T08:15:36.255957Z
+1456
+kbchoi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3510b6c8-adcc-db11-bc09-00d0b788ee00
+
+values
+dir
+
+values-en
+dir
+
+drawable-hdpi
+dir
+
+anim
+dir
+
+values-ko
+dir
+
+drawable-ldpi
+dir
+
+drawable-mdpi
+dir
+
+raw
+dir
+
+layout
+dir
+

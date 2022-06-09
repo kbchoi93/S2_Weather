@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <TextView 
+        android:layout_width="fill_parent"
+        android:background="@drawable/activity_title_bar"
+        android:text="순서편집"
+        android:gravity="left|center_vertical" android:layout_height="38px"/>
+<com.weathernews.Weather.DndListView android:id="@android:id/list"
+	        android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="12"/>
+         <LinearLayout
+            android:layout_width="fill_parent" android:layout_height="wrap_content">
+             <Button
+                android:id="@+id/dragndrop_confirm"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="확인"
+                android:layout_width="10dip" android:layout_weight="1" android:layout_height="wrap_content"/>
+             <Button
+                android:id="@+id/dragndrop_cancel"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="취소"
+                android:layout_width="10dip" android:layout_weight="1" android:layout_height="wrap_content"/>
+         </LinearLayout>
+</LinearLayout>

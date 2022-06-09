@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:a="http://schemas.android.com/apk/res/android"
+	      a:orientation="horizontal"
+	      a:gravity="center"
+	      a:layout_width="fill_parent"
+	      a:layout_height="80dp"
+	      a:padding="5dp">
+
+  <FrameLayout
+      a:layout_width="80dp"
+      a:layout_height="fill_parent"
+      a:layout_weight="10"
+      a:layout_gravity="right"
+      a:layout_marginLeft="10dp"
+      a:layout_marginRight="5dp">
+
+    <TextView
+	a:id="@+id/rowCurrentTemp"
+	a:layout_width="fill_parent"
+	a:layout_height="wrap_content"
+	a:layout_gravity="bottom"
+	a:layout_marginTop="10dp"
+	a:text="17℃"
+	a:singleLine="true"
+	style="@style/tempFont"
+	/>
+
+    <ImageView
+	a:id="@+id/rowImage"
+	a:src="@drawable/weather_icon_01"
+	a:layout_gravity="center"
+	a:layout_width="wrap_content"
+	a:layout_height="fill_parent"
+	a:gravity="center" />
+
+  </FrameLayout>
+
+  <RelativeLayout
+      a:padding="5dp"
+      a:layout_width="240dp"
+      a:layout_height="fill_parent"
+      a:layout_weight="50"
+      a:layout_marginRight="5dp">
+
+    <ImageView
+    	a:id="@+id/rowThemeImage"
+    	a:src="@drawable/theme_weather_mountain_icon"
+    	a:layout_gravity="center"
+    	a:layout_width="wrap_content"
+    	a:layout_height="fill_parent"
+    	a:layout_alignParentRight="true"
+    	a:layout_centerVertical="true"
+    	a:gravity="center" />
+
+    <TextView
+	a:id="@+id/rowFutureTemp"
+	a:layout_width="wrap_content"
+	a:layout_height="wrap_content"
+	a:gravity="left|center_vertical"
+	a:text="19/12"
+	a:singleLine="true"
+	style="@style/normalFont"
+	a:layout_alignParentLeft="true"
+	a:layout_alignParentBottom="true"
+	/>
+
+    <TextView
+    	a:id="@+id/rowComment"
+    	a:layout_width="wrap_content"
+    	a:layout_height="wrap_content"
+    	a:gravity="left|center_vertical"
+	a:layout_marginLeft="5dp"
+    	a:layout_toRightOf="@id/rowFutureTemp"
+    	a:layout_alignBaseline="@id/rowFutureTemp"
+    	a:text="comment"
+    	a:singleLine="true"
+    	style="@style/normalFont"
+    	/>
+
+    <TextView
+	a:id="@+id/rowCityName"
+	a:layout_width="wrap_content"
+	a:layout_height="wrap_content"
+	a:gravity="left|center_vertical"
+	a:layout_above="@id/rowFutureTemp"
+	a:layout_alignLeft="@id/rowFutureTemp"
+	a:text="city name"
+	a:singleLine="true"
+	style="@style/cityNameFont"
+	/>
+
+  </RelativeLayout>
+
+</LinearLayout>

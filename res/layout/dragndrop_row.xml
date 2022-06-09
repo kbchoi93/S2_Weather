@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="horizontal"
+  android:layout_width="fill_parent" 
+  android:background="@drawable/list_view_selector"
+  android:layout_height="wrap_content"
+  android:id="@+id/dragicon">
+  
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drag_text"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:gravity="center_vertical"
+    android:paddingLeft="6dip"
+    android:paddingRight="6dip"
+    
+    android:layout_width="fill_parent" android:layout_weight="1"/>
+    <ImageView
+        android:src="@drawable/btn_edit_list"
+        android:layout_gravity="center_vertical"
+     android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+</LinearLayout>

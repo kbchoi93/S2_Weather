@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout
+    android:id="@+id/land48htoplayer"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+  <FrameLayout
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:layout_weight="1">
+    <ImageView android:id="@+id/land48h_content" android:layout_width="fill_parent" android:layout_height="324px" android:layout_gravity="top" android:gravity="center" />
+  </FrameLayout>
+  <include layout="@layout/bottom_bar" />
+</LinearLayout>

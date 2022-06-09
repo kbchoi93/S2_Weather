@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout
+    android:id="@+id/sattle_top"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout 
+		android:orientation="vertical" 
+		android:layout_height="324dp"
+	    android:layout_width="400dp"
+	    android:layout_gravity="center"
+	    android:layout_weight="1">
+      <Button android:id="@+id/sattle_video"
+	      android:layout_gravity="center"
+	      android:layout_height="fill_parent"
+	      android:layout_width="fill_parent"
+	      />
+   <ProgressBar 
+		  		android:id="@+id/sattle_loadinglogo"
+		        style="@style/ProgressBar_new"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center"/>
+    </FrameLayout>
+  <include layout="@layout/bottom_bar" />
+</LinearLayout>

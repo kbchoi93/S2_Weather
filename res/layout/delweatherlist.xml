@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+    <TextView 
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:background="@drawable/activity_title_bar"
+        android:text="삭제"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff"
+        android:gravity="left|center_vertical"
+    />
+    <LinearLayout 
+        android:id="@+id/delete_select"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+	    <CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/delete_check"
+        android:layout_width="fill_parent"
+        android:layout_weight="1" 
+        android:layout_height="70dip"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="center_vertical"
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+        android:clickable="false"
+        android:paddingLeft="6dip"
+        android:paddingRight="6dip"
+        android:background="@drawable/winset_selectall_bg"
+        android:text="모두 선택"
+    />
+    </LinearLayout>
+
+    <ListView android:id="@android:id/list"
+        android:layout_width="fill_parent" 
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:drawSelectorOnTop="false"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >        
+        <Button
+            android:layout_height="wrap_content"
+            android:id="@+id/delweatherlist_confirm"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="삭제" android:layout_width="10dip" android:layout_weight="1"/>
+        <Button
+            android:layout_height="wrap_content"
+            android:id="@+id/delweatherlist_cancel"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="취소" android:layout_width="10dip" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

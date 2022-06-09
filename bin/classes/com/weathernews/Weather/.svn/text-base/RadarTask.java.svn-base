@@ -1,0 +1,41 @@
+package com.weathernews.Weather;
+
+import java.io.InputStream;
+import java.net.URL;
+
+import android.graphics.drawable.Drawable;
+
+public class RadarTask implements Runnable{
+	private static LandRadar animation;
+	private String BaseUrl;
+	private String[] ArrayFiles;
+	
+
+	RadarTask(LandRadar animation, String baseurl, String[] arrayfiles) {
+		this.animation = animation;
+		this.BaseUrl = baseurl;
+		this.ArrayFiles = arrayfiles;
+	}
+	
+	public void run(){
+		final Drawable[] drawable = new Drawable[10];
+
+		if(BaseUrl != null) {
+			for(int i = 0 ; i < 10 ; i++){
+//				Log.d("myTag", "fileName[" + i + "] = " + ArrayFiles[i]);
+	    		try{
+	    			String url = BaseUrl + ArrayFiles[i];
+	    			drawable[i] = Drawable.createFromStream((InputStream)(new URL(url).getContent()), "src");
+	    		}catch (Exception e) {
+	    			//Log.e("myTag", "Can't get Image From " + BaseUrl + ArrayFiles[i] + e.toString());
+	    		}			
+			}
+		}
+		animation.SetButtonBackImage(drawable);
+		
+		for(int i = 0 ; i < 10 ; i ++){
+			if(null != drawable[i])
+				drawable[i].setCallback(null);
+		}
+	}
+}

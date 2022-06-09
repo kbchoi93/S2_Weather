@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_height="fill_parent" android:layout_width="fill_parent" android:id="@+id/showtodayweather">
+    <FrameLayout
+    android:id="@+id/FrameLayout01"
+    android:layout_width="fill_parent"
+    android:layout_weight="1"
+    android:layout_height="wrap_content">
+        <ImageView android:id="@+id/ImageView02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="right"></ImageView>
+        <ImageView
+        android:id="@+id/showtoday_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" android:layout_gravity="fill_vertical" android:scaleType="centerCrop"/>
+        <LinearLayout android:id="@+id/LinearLayout06" android:layout_height="wrap_content" android:orientation="vertical" android:layout_width="fill_parent" android:layout_gravity="bottom">
+        
+            <FrameLayout android:id="@+id/FrameLayout08" android:layout_height="wrap_content" android:layout_width="fill_parent">
+            <LinearLayout android:id="@+id/LinearLayout03" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_gravity="right" android:layout_marginRight="10dip" android:layout_width="wrap_content" android:paddingBottom="14dip">
+                <ImageButton android:id="@+id/livecam" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/livebtn_selector" android:layout_marginRight="10dip"/>
+                <ImageButton android:id="@+id/gpsbtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/gpsbtn_selector"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/LinearLayout11" android:layout_height="fill_parent" android:layout_width="wrap_content" android:layout_gravity="bottom">
+                <ImageView android:id="@+id/ImageView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/today_weather_text" android:layout_marginLeft="17dip" android:layout_gravity="bottom"></ImageView>
+                <TextView android:id="@+id/TextView13" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dip" android:layout_gravity="bottom" android:textSize="14dp"></TextView>
+            </LinearLayout>
+            </FrameLayout>
+            
+            <LinearLayout
+                android:id="@+id/LinearLayout01"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/todays_weather_bg_01"
+                android:orientation="horizontal"
+                android:padding="5dip" >
+
+                <FrameLayout android:id="@+id/FrameLayout02" android:layout_weight="1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+				                    
+				<LinearLayout android:id="@+id/LinearLayout07" android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="fill_parent">
+				<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/Hourlytext_1_1" android:textSize="12dp" android:layout_gravity="center"></TextView>
+				<ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/Hourly_1" android:layout_gravity="center_vertical|center_horizontal"></ImageView>
+				<TextView android:id="@+id/HourlyText_1_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="10dp" android:layout_gravity="center"></TextView>
+				</LinearLayout>
+				</FrameLayout>
+                <FrameLayout android:id="@+id/FrameLayout03" android:layout_weight="1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    
+<LinearLayout android:id="@+id/LinearLayout08" android:layout_height="wrap_content" android:layout_width="fill_parent" android:orientation="vertical">
+<TextView android:id="@+id/HourlyText_2_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="12dp" android:layout_gravity="center"></TextView>
+<ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/Hourly_2" android:layout_gravity="center_vertical|center_horizontal"></ImageView>
+<TextView android:id="@+id/HourlyText_2_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="10dp" android:layout_gravity="center"></TextView>
+</LinearLayout>
+</FrameLayout>
+                <FrameLayout android:id="@+id/FrameLayout04" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_weight="1">
+                    
+<LinearLayout android:id="@+id/LinearLayout09" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical">
+<TextView android:id="@+id/HourlyText_3_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="12dp" android:layout_gravity="center"></TextView>
+<ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/Hourly_3" android:layout_gravity="center_vertical|center_horizontal"></ImageView>
+<TextView android:id="@+id/HourlyText_3_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="10dp" android:layout_gravity="center"></TextView>
+</LinearLayout>
+
+</FrameLayout>
+                <FrameLayout android:id="@+id/FrameLayout05" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_weight="1">
+                    
+<LinearLayout android:id="@+id/LinearLayout10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical">
+<TextView android:id="@+id/HourlyText_4_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="12dp" android:layout_gravity="center"></TextView>
+<ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/Hourly_4" android:layout_gravity="center_vertical|center_horizontal"></ImageView>
+<TextView android:id="@+id/HourlyText_4_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="10dp" android:layout_gravity="center"></TextView>
+
+
+</LinearLayout>
+</FrameLayout>
+            </LinearLayout>
+        
+
+
+
+
+</LinearLayout>
+        
+<LinearLayout android:id="@+id/LinearLayout02" android:layout_height="wrap_content" android:orientation="vertical" android:layout_width="fill_parent">
+<LinearLayout android:id="@+id/LinearLayout05" android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/location_name_bg_01">
+    <TextView android:text="" android:id="@+id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17dip" android:layout_marginTop="5dip" android:layout_gravity="bottom" android:textSize="20dp"></TextView>
+    <TextView android:text="" android:id="@+id/TextView08" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="12dp" android:layout_gravity="bottom"></TextView>
+</LinearLayout>
+<LinearLayout android:id="@+id/LinearLayout04" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:text="" android:id="@+id/TextView02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="22dp"  android:layout_marginLeft="17dip"></TextView>
+    <TextView android:text="" android:id="@+id/TextView04" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="20dp"></TextView>
+    <TextView android:text="/" android:id="@+id/TextView05" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="16dp"></TextView>
+    <TextView android:text="" android:id="@+id/TextView06" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="22dp"></TextView>
+    <TextView android:text="" android:id="@+id/TextView07" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="20dp"></TextView>
+</LinearLayout>
+<LinearLayout android:id="@+id/LinearLayout06" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:text="" android:id="@+id/TextView03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="17dp"  android:layout_marginLeft="17dip"></TextView>
+    <TextView android:text="" android:id="@+id/TextView09" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="12dp"></TextView>
+    <TextView android:text="/" android:id="@+id/TextView10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="12dp"></TextView>
+    <TextView android:text="" android:id="@+id/TextView11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="15dp"></TextView>
+    <TextView android:text="" android:id="@+id/TextView12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="12dp"></TextView>
+</LinearLayout>
+
+
+
+</LinearLayout>
+
+</FrameLayout>
+    <RelativeLayout android:id="@+id/RelativeLayout02" android:layout_height="wrap_content" android:layout_gravity="bottom" android:layout_width="fill_parent">
+        <FrameLayout android:id="@+id/FrameLayout07" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_above="@+id/ImageView03">
+	  <HorizontalScrollView android:id="@+id/HorizontalScrollView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scrollbars="none" android:layout_marginTop="5dp">
+	      <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+	          <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+	              <TextView android:id="@+id/daily_date01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="내일" android:textSize="14sp"  android:layout_gravity="center"/>
+	              <ImageView android:id="@+id/daily_icon01" android:layout_width="70dp" android:layout_height="70dp" android:src="@drawable/weather_icon_01"  android:layout_gravity="center"/>
+	              <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center">
+	                  <TextView android:id="@+id/daily_temp_max01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="12sp" android:text="12"/>
+	                  <TextView android:id="@+id/daily_symbol01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="10sp" android:text="℃/"/>
+	                  <TextView android:id="@+id/daily_temp_min01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="12sp" android:text="23"/>
+	                  <TextView android:id="@+id/daily_unit01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="10sp" android:text="℃"/>
+	              </LinearLayout>
+	          </LinearLayout>
+	          <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+	              <TextView android:id="@+id/daily_date02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="06/19(수)" android:textSize="14sp" android:layout_gravity="center"/>
+	              <ImageView android:id="@+id/daily_icon02" android:layout_width="70dp" android:layout_height="70dp" android:src="@drawable/weather_icon_01"  android:layout_gravity="center"/>
+	              <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center">
+	                  <TextView android:id="@+id/daily_temp_max02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="12sp" android:text="12"/>
+	                  <TextView android:id="@+id/daily_symbol02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="10sp" android:text="℃/"/>
+	                  <TextView android:id="@+id/daily_temp_min02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="12sp" android:text="23"/>
+	                  <TextView android:id="@+id/daily_unit02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="10sp" android:text="℃"/>
+	              </LinearLayout>
+	          </LinearLayout>
+	          <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+	              <TextView android:id="@+id/daily_date03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="06/20(목)" android:textSize="14sp" android:layout_gravity="center"/>
+	              <ImageView android:id="@+id/daily_icon03" android:layout_width="70dp" android:layout_height="70dp" android:src="@drawable/weather_icon_01"  android:layout_gravity="center"/>
+	              <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center">
+	                  <TextView android:id="@+id/daily_temp_max03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="12sp" android:text="12"/>
+	                  <TextView android:id="@+id/daily_symbol03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="10sp" android:text="℃/"/>
+	                  <TextView android:id="@+id/daily_temp_min03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="12sp" android:text="23"/>
+	                  <TextView android:id="@+id/daily_unit03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="10sp" android:text="℃"/>
+	              </LinearLayout>
+	          </LinearLayout>
+	          <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+	              <TextView android:id="@+id/daily_date04" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="06/21(금)" android:textSize="14sp" android:layout_gravity="center"/>
+	              <ImageView android:id="@+id/daily_icon04" android:layout_width="70dp" android:layout_height="70dp" android:src="@drawable/weather_icon_01"  android:layout_gravity="center"/>
+	              <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center">
+	                  <TextView android:id="@+id/daily_temp_max04" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="12sp" android:text="12"/>
+	                  <TextView android:id="@+id/daily_symbol04" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="10sp" android:text="℃/"/>
+	                  <TextView android:id="@+id/daily_temp_min04" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="12sp" android:text="23"/>
+	                  <TextView android:id="@+id/daily_unit04" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="10sp" android:text="℃"/>
+	              </LinearLayout>
+	          </LinearLayout>
+	          <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+	              <TextView android:id="@+id/daily_date05" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="06/22(토)" android:textSize="14sp" android:layout_gravity="center"/>
+	              <ImageView android:id="@+id/daily_icon05" android:layout_width="70dp" android:layout_height="70dp" android:src="@drawable/weather_icon_01"  android:layout_gravity="center"/>
+	              <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center">
+	                  <TextView android:id="@+id/daily_temp_max05" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="12sp" android:text="12"/>
+	                  <TextView android:id="@+id/daily_symbol05" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="10sp" android:text="℃/"/>
+	                  <TextView android:id="@+id/daily_temp_min05" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="12sp" android:text="23"/>
+	                  <TextView android:id="@+id/daily_unit05" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="10sp" android:text="℃"/>
+	              </LinearLayout>
+	          </LinearLayout>
+	          <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+	              <TextView android:id="@+id/daily_date06" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="06/23(일)" android:textSize="14sp" android:layout_gravity="center"/>
+	              <ImageView android:id="@+id/daily_icon06" android:layout_width="70dp" android:layout_height="70dp" android:src="@drawable/weather_icon_01"  android:layout_gravity="center"/>
+	              <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center">
+	                  <TextView android:id="@+id/daily_temp_max06" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="12sp" android:text="12"/>
+	                  <TextView android:id="@+id/daily_symbol06" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="10sp" android:text="℃/"/>
+	                  <TextView android:id="@+id/daily_temp_min06" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="12sp" android:text="23"/>
+	                  <TextView android:id="@+id/daily_unit06" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="10sp" android:text="℃"/>
+	              </LinearLayout>
+	          </LinearLayout>
+	          <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+	              <TextView android:id="@+id/daily_date07" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="06/24(월)" android:textSize="14sp" android:layout_gravity="center"/>
+	              <ImageView android:id="@+id/daily_icon07" android:layout_width="70dp" android:layout_height="70dp" android:src="@drawable/weather_icon_01"  android:layout_gravity="center"/>
+	              <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center">
+	                  <TextView android:id="@+id/daily_temp_max07" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="12sp" android:text="12"/>
+	                  <TextView android:id="@+id/daily_symbol07" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="10sp" android:text="℃/"/>
+	                  <TextView android:id="@+id/daily_temp_min07" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="12sp" android:text="23"/>
+	                  <TextView android:id="@+id/daily_unit07" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="10sp" android:text="℃"/>
+	              </LinearLayout>
+	          </LinearLayout>
+	      </LinearLayout>
+	  </HorizontalScrollView>
+        </FrameLayout>
+    </RelativeLayout>
+    <include layout="@layout/bottom_bar" />
+</LinearLayout>

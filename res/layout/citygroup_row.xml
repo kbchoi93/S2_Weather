@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_marginLeft="10dip"
+    android:layout_height="72dip"
+    >
+
+    <TextView android:id="@+id/childname"
+         android:paddingLeft="40dip"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:gravity="center_vertical"/>
+</LinearLayout>
+

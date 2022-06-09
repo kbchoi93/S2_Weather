@@ -1,0 +1,134 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root" android:orientation="vertical"
+    android:layout_width="450dp" android:layout_height="wrap_content"
+    android:padding="5dp"
+    >
+    <TextView
+        android:layout_marginLeft="7dp"  
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="날씨이용안내"
+        android:textSize="18dp"
+        android:textColor="#ffffff"
+        />
+    <TextView  
+        android:layout_marginLeft="7dp"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginTop="0px"
+        android:textColor="#ffffff"
+        android:text="1) '날씨'에서 시간별 날씨 정보를 "
+        />
+    <TextView  
+        android:layout_marginLeft="7dp"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginTop="0px"
+        android:textColor="#ffffff"
+        android:text="     조회할 수 있습니다."
+        />
+    <TextView  
+        android:layout_marginLeft="7dp"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginTop="0px"
+        android:textColor="#ffffff"
+        android:text="2) '테마날씨'에서 테마별 날씨 정보를 "
+        />
+    <TextView  
+        android:layout_marginLeft="7dp"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginTop="0px"
+        android:textColor="#ffffff"
+        android:text="     선택 조회할 수 있습니다."
+        />
+    <TextView  
+        android:layout_marginLeft="7dp"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginTop="0px"
+        android:textColor="#ffffff"
+        android:text="3) 'Live Cam'에서 국내 지역별  Live Cam"
+        />
+    <TextView
+        android:layout_marginLeft="7dp"  
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginTop="0px"
+        android:textColor="#ffffff"
+        android:text="     화면을 실시간으로 검색할 수 있습니다."
+        />
+    <TextView  
+        android:layout_marginLeft="7dp"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="이용요금"
+        android:textSize="18dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#ffffff"
+        />
+    <TextView  
+        android:layout_marginLeft="7dp"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginTop="0px"
+        android:textColor="#ffffff"
+        android:text="1) [정보이용료]무료"
+        />
+    <TextView  
+        android:layout_marginLeft="7dp"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginTop="0px"
+        android:textColor="#ffffff"
+        android:text="2) [데이터통화료]유료"
+        />
+    <TextView  
+        android:layout_marginLeft="7dp"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginTop="0px"
+        android:textColor="#ffffff"
+        android:text="    데이터 요금제에 가입하시면 무료통화"
+        />
+    <TextView  
+        android:layout_marginLeft="7dp"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginTop="0px"
+        android:textColor="#ffffff"
+        android:text="    혜택 및 데이터 통화료가 할인"
+        />
+    <TextView  
+        android:layout_marginLeft="7dp"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginTop="0px"
+        android:textColor="#ffffff"
+        android:text="    적용됩니다."
+        />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:id="@+id/check_layout"
+        android:layout_marginLeft="7dp"
+        >
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:linksClickable="false"
+            android:checked="true"
+            android:id="@+id/custom_check"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:text=" 다시보지 않기"
+            />
+    </LinearLayout>
+</LinearLayout>

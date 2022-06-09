@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="WeathernewsTouch" default="help">
+
+    <!-- The local.properties file is created and updated by the 'android' tool.
+         It contains the path to the SDK. It should *NOT* be checked in in Version
+         Control Systems. -->
+    <property file="local.properties" />
+
+    <!-- The build.properties file can be created by you and is never touched
+         by the 'android' tool. This is the place to change some of the default property values
+         used by the Ant rules.
+         Here are some properties you may want to change/update:
+
+         application.package
+             the name of your application package as defined in the manifest. Used by the
+             'uninstall' rule.
+         source.dir
+             the name of the source directory. Default is 'src'.
+         out.dir
+             the name of the output directory. Default is 'bin'.
+
+         Properties related to the SDK location or the project target should be updated
+          using the 'android' tool with the 'update' action.
+
+         This file is an integral part of the build system for your application and
+         should be checked in in Version Control Systems.
+
+         -->
+    <property file="build.properties" />
+
+    <!-- The default.properties file is created and updated by the 'android' tool, as well
+         as ADT.
+         This file is an integral part of the build system for your application and
+         should be checked in in Version Control Systems. -->
+    <property file="default.properties" />
+
+    <!-- Custom Android task to deal with the project target, and import the proper rules.
+         This requires ant 1.6.0 or above. -->
+    <path id="android.antlibs">
+        <pathelement path="${sdk.dir}/tools/lib/anttasks.jar" />
+        <pathelement path="${sdk.dir}/tools/lib/sdklib.jar" />
+        <pathelement path="${sdk.dir}/tools/lib/androidprefs.jar" />
+        <pathelement path="${sdk.dir}/tools/lib/apkbuilder.jar" />
+        <pathelement path="${sdk.dir}/tools/lib/jarutils.jar" />
+    </path>
+
+    <taskdef name="setup"
+        classname="com.android.ant.SetupTask"
+        classpathref="android.antlibs" />
+
+    <!-- Execute the Android Setup task that will setup some properties specific to the target,
+         and import the build rules files.
+
+         The rules file is imported from
+            <SDK>/platforms/<target_platform>/templates/android_rules.xml
+
+         To customize some build steps for your project:
+         - copy the content of the main node <project> from android_rules.xml
+         - paste it in this build.xml below the <setup /> task.
+         - disable the import by changing the setup task below to <setup import="false" />
+
+         This will ensure that the properties are setup correctly but that your customized
+         build steps are used.
+    -->
+    <setup />
+
+    <property name="out.proguard.dir" location="${out.dir}/proguard" />
+    <property name="out.proguard.absolute.dir" location="${out.proguard.dir}" />
+
+    <condition property="dirs.exist">
+      <and>
+	<available type="dir" file="${resource.absolute.dir}" />
+	<available type="dir" file="${external.libs.absolute.dir}" />
+	<available type="dir" file="${gen.absolute.dir}" />
+	<available type="dir" file="${out.absolute.dir}" />
+	<available type="dir" file="${out.classes.absolute.dir}" />
+      </and>
+    </condition>
+
+    <uptodate property="resources.up_to_date" targetfile="gen/com/weathernews/Weather/R.java">
+      <srcfiles dir="res" includes="**/*" />
+    </uptodate>
+
+    <target name="-dirs" unless="dirs.exist">
+        <echo>Creating output directories if needed...</echo>
+        <mkdir dir="${resource.absolute.dir}" />
+        <mkdir dir="${external.libs.absolute.dir}" />
+        <mkdir dir="${gen.absolute.dir}" />
+        <mkdir dir="${out.absolute.dir}" />
+        <mkdir dir="${out.classes.absolute.dir}" />
+    </target>
+
+    <!-- Generates the R.java file for this project's resources. -->
+    <target name="-resource-src" depends="-dirs" unless="resources.up_to_date">
+        <echo>Generating R.java / Manifest.java from the resources...</echo>
+        <exec executable="${aapt}" failonerror="true">
+            <arg value="package" />
+            <arg line="${v.option}" />
+            <arg value="-m" />
+            <arg value="-J" />
+            <arg path="${gen.absolute.dir}" />
+            <arg value="-M" />
+            <arg path="AndroidManifest.xml" />
+            <arg value="-S" />
+            <arg path="${resource.absolute.dir}" />
+            <arg value="-I" />
+            <arg path="${android.jar}" />
+        </exec>
+    </target>
+
+    <target name="compile-scala"
+	    depends="-resource-src, -aidl"
+	    description="Compile scala files">
+      <taskdef resource="scala/tools/ant/antlib.xml" classpath="/usr/share/java/scala-compiler.jar:/usr/share/java/scala-library.jar" />
+      <scalac encoding="utf-8" deprecation="on" destdir="${out.classes.absolute.dir}">
+	<src>
+	  <dirset dir="." includes="src" />
+	  <dirset dir="." includes="gen" />
+	</src>
+	<classpath>
+	  <pathelement location="${android.jar}" />
+	  <fileset dir="/usr/share/java" includes="*.jar" />
+	</classpath>
+      </scalac>
+    </target>
+
+    <target name="-compile-java" depends="-resource-src, -aidl"
+	    description="Compile java files">
+      <javac encoding="utf-8" target="1.5" debug="true" extdirs=""
+             destdir="${out.classes.absolute.dir}"
+             bootclasspathref="android.target.classpath"
+             verbose="${verbose}" classpath="${extensible.classpath}"
+	     includeantruntime="false">
+        <src path="${source.absolute.dir}" />
+        <src path="${gen.absolute.dir}" />
+	<!-- <compilerarg value="-Xlint:unchecked"/> -->
+        <classpath>
+          <fileset dir="${external.libs.absolute.dir}" includes="*.jar" />
+        </classpath>
+      </javac>
+    </target>
+
+    <target name="compile" depends="-compile-java"
+            description="Compiles project's .scala and .java files into .class files">
+        <!-- If android rules are used for a test project, its classpath should include
+             tested project's location -->
+        <condition property="extensible.classpath"
+                   value="${tested.project.absolute.dir}/bin/classes" else=".">
+            <isset property="tested.project.absolute.dir" />
+        </condition>
+    </target>
+
+    <macrodef name="dex-helper">
+       <element name="external-libs" optional="yes" />
+       <element name="extra-parameters" optional="yes" />
+       <sequential>
+         <echo>Converting compiled files and external libraries into ${intermediate.dex.file}...
+         </echo>
+         <apply executable="${dx}" failonerror="true" parallel="true">
+             <arg value="--dex" />
+             <arg value="--output=${intermediate.dex.file}" />
+             <extra-parameters />
+             <arg line="${verbose.option}" />
+             <arg path="${out.classes.absolute.dir}" />
+             <fileset dir="${external.libs.absolute.dir}" includes="*.jar" />
+             <external-libs />
+         </apply>
+       </sequential>
+    </macrodef>
+
+    <!-- Converts this project's .class files into .dex files -->
+    <target name="dex" depends="-dex" />
+
+    <target name="dex.check_up_to_date">
+      <uptodate property="dex.up_to_date" targetfile="${intermediate.dex.file}">
+	<srcfiles dir="${out.classes.absolute.dir}" includes="**/*.class"/>
+      </uptodate>
+    </target>
+    <target name="-dex" depends="compile,dex.check_up_to_date" unless="dex.up_to_date">
+      <dex-helper />
+    </target>
+
+    <target name="proguard" depends="compile">
+      <taskdef resource="proguard/ant/task.properties" classpath="/usr/share/java/proguard.jar" />
+      <proguard>
+	-injars ${out.classes.absolute.dir}:/usr/share/java/scala-library.jar(!META-INF/MANIFEST.MF,!library.properties)
+	-outjars ${out.proguard.absolute.dir}/classes.min.jar
+	-libraryjars ${android.jar}
+	-dontwarn
+	-dontoptimize
+	-dontobfuscate
+	-keep public class * extends **Activity
+	-keep public class * extends **ViewGroup
+	-keep public class * extends **View
+	-keep public class **DateScroller
+	-keep public class **SignalLinearLayout
+	-keep public class **IconManager
+	-keepclassmembers public class * extends **Activity &#x007B; &lt;methods&gt;; &#x007D;
+	-keep interface scala.ScalaObject
+        -dontskipnonpubliclibraryclasses
+        -dontskipnonpubliclibraryclassmembers
+        -allowaccessmodification
+      </proguard>
+    </target>
+
+    <target name="install" depends="debug"
+                description="Installs/reinstalls the debug package onto a running
+                            emulator or device. If the application was previously installed,
+                            the signatures must match." >
+      <sequential>
+	<echo>Installing ${out.debug.file} onto default emulator or device...</echo>
+	<exec executable="${adb}" failonerror="true">
+	  <arg line="${adb.device.arg}" />
+	  <arg value="install" />
+	  <arg value="-r" />
+	  <arg path="${out.debug.file}" />
+	</exec>
+	<echo>Installed, running ${out.debug.file} ...</echo>
+	<exec executable="${adb}" failonerror="true">
+	  <arg line="${adb.device.arg}" />
+	  <arg value="wait-for-device" />
+	  <arg value="shell" />
+	  <arg value="am" />
+	  <arg value="start" />
+	  <arg value="-a" />
+	  <arg value="android.intent.action.Main" />
+	  <arg value="-n" />
+	  <arg value="com.weathernews.Weather/.Startup" />
+	</exec>
+      </sequential>
+    </target>
+
+</project>

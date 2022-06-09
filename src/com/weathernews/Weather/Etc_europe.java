@@ -1,0 +1,32 @@
+package com.weathernews.Weather;
+public class Etc_europe {
+    public final static CityListClass[] Etc_europe = new CityListClass[] {
+    	new CityListClass("GZMGS",	"가지마구사",	"키프로스",	"Asia/Nicosia"),
+    	new CityListClass("NCS1",	"니코시아",	"키프로스",	"Asia/Nicosia"),
+    	new CityListClass("LRN",	"라르나카",	"키프로스",	"Asia/Nicosia"),
+    	new CityListClass("MDINA",	"라바트 - 메디나",	"몰타",	"Europe/Malta"),
+    	new CityListClass("LVN2", "라트비아", "라트비아", "Europe/Riga"),
+    	new CityListClass("LIM",	"리마솔",	"키프로스",	"Asia/Nicosia"),
+    	new CityListClass("MNC",	"모나코",	"Monaco",	"Europe/Monaco"),
+    	new CityListClass("MOSTA",	"모스타",	"몰타",	"Europe/Malta"),
+    	new CityListClass("MINSK",	"민스크",	"Belarus",	"Europe/Minsk"),
+    	new CityListClass("VTCN",	"바티칸",	"Vatican City",	"Europe/Vatican"),
+    	new CityListClass("VLT",	"발레타",	"몰타",	"Europe/Malta"),
+    	new CityListClass("BLZRS",	"발차스",	"리히텐슈타인",	"Europe/Vaduz"),
+    	new CityListClass("BRKRK",	"비르키르카라",	"몰타",	"Europe/Malta"),
+    	new CityListClass("VTTR",	"빅토리아",	"몰타",	"Europe/Malta"),
+    	new CityListClass("MRN",	"산마리노",	"San Marino",	"Europe/San_Marino"),
+    	new CityListClass("SCHN1",	"샨",	"리히텐슈타인",	"Europe/Vaduz"),
+    	new CityListClass("ANDRR",	"안도라라베야",	"Andorra",	"Europe/Andorra"),
+    	new CityListClass("ESCHN",	"에셴",	"리히텐슈타인",	"Europe/Vaduz"),
+    	new CityListClass("ZBBR",	"자바르",	"몰타",	"Europe/Malta"),
+    	new CityListClass("ZBBG",	"제부즈",	"몰타",	"Europe/Malta"),
+    	new CityListClass("ZJTN",	"체이툰",	"몰타",	"Europe/Malta"),
+    	new CityListClass("KSHNY",	"키시뇨프",	"Moldova",	"Europe/Chisinau"),
+		new CityListClass("KIEV",   "키예프", "우크라이나", "Europe/Kiev"),
+    	new CityListClass("TRSN2",	"트리젠",	"리히텐슈타인",	"Europe/Vaduz"),
+    	new CityListClass("TBLSI",	"트빌리시",	"Georgia",	"Asia/Tbilisi"),
+    	new CityListClass("VADUZ",	"파두츠",	"리히텐슈타인",	"Europe/Vaduz"),
+    	new CityListClass("PPHS",	"파포스",	"키프로스",	"Asia/Nicosia"),
+    };
+}

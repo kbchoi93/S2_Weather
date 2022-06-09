@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	     android:id="@+id/footer"
+	     android:layout_width="fill_parent"
+	     android:layout_height="30dp"
+	     android:background="@drawable/update_bg_01">
+  <ImageView
+      android:id="@+id/logo"
+      android:src="@drawable/update_wn_logo"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"/>
+  <FrameLayout android:layout_width="1px"
+	       android:layout_height="fill_parent"
+	       android:layout_weight="1" />
+  <TextView
+      android:id="@+id/bottombar_date"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="right|center_vertical"
+      android:layout_marginRight="22dp"
+      android:gravity="right|center_vertical"
+      android:textSize="12dip"
+      android:textColor="#FFFFFF" />
+   <ProgressBar 
+		  		android:id="@+id/progress_small_title"
+		        style="@style/ProgressBar_new"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="right|center_vertical"
+		        android:layout_marginRight="5px"/>
+<!--  
+  <ImageView android:id="@+id/main_loadinglogo"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:layout_marginRight="5px"
+	     android:layout_gravity="right|center_vertical"
+	     android:background="@anim/update_loading_icon"
+	     />
+-->
+</FrameLayout>
